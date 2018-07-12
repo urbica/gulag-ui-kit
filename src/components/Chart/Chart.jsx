@@ -21,7 +21,8 @@ const Chart = props => {
     value,
     showBars,
     highlightBars,
-    showTicks
+    showTicks,
+    mobilizeSlider
   } = props;
 
   const xScale = scaleTime()
@@ -105,6 +106,7 @@ const Chart = props => {
         barWidth={barWidth}
         height={height - margin.top - margin.bottom}
         margin={margin}
+        mobilizeSlider={mobilizeSlider}
       />
     </svg>
   );
@@ -127,15 +129,16 @@ Chart.propTypes = {
   y2: PropTypes.func.isRequired,
   showBars: PropTypes.bool,
   highlightBars: PropTypes.bool,
-  showTicks: PropTypes.bool
-  // mobilizeSlider: PropTypes.arrayOf().isRequired
+  showTicks: PropTypes.bool,
+  mobilizeSlider: PropTypes.bool
 };
 
 Chart.defaultProps = {
   onChange: null,
   showBars: true,
   highlightBars: false,
-  showTicks: true
+  showTicks: true,
+  mobilizeSlider: false
 };
 
 export default Chart;

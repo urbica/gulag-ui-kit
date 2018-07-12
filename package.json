@@ -1,15 +1,16 @@
 {
-  "name": "components",
+  "name": "@gulag/ui-kit",
   "version": "0.1.0",
   "description": "common components for web and exposure versions",
-  "main": "index.js",
+  "main": "dist/ui-kit.js",
   "scripts": {
     "start": "npm run styleguide",
     "styleguide": "styleguidist server",
     "lint": "eslint src --ext .js,.jsx",
     "precommit": "lint-staged",
     "cz": "git-cz",
-    "release": "standard-version"
+    "build": "webpack --config webpack.config.js",
+    "release": "npm run build && standard-version"
   },
   "config": {
     "commitizen": {
@@ -25,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@gitlab.urbica.co:2222/gulag/components.git"
+    "url": "ssh://git@gitlab.urbica.co:2222/gulag/ui-kit.git"
   },
   "keywords": [
     "gulag",
@@ -77,6 +78,7 @@
     "react-styleguidist": "^7.0.20",
     "standard-version": "^4.4.0",
     "styled-components": "^3.3.3",
-    "webpack": "^4.14.0"
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
   }
 }
