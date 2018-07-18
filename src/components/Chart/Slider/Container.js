@@ -9,28 +9,8 @@ export default styled.g`
   );
   cursor: pointer;
 
-  .circle {
-    @media (min-width: 1024px) {
-      display: none;
-    }
-  }
-
-  .rect {
-    @media (max-width: 1023px) {
-      display: none;
-    }
-  }
-
-  .handleLines {
-    @media (max-width: 1023px) {
-      display: none;
-    }
-  }
-
-  .handleShadow {
-    @media (max-width: 1023px) {
-      display: none;
-    }
+  .handle {
+    pointer-events: none;
   }
 
   .currentYear {
