@@ -10,7 +10,7 @@
     "precommit": "lint-staged",
     "cz": "git-cz",
     "build": "webpack --config webpack.config.js",
-    "release": "npm run build && standard-version"
+    "release": "standard-version"
   },
   "config": {
     "commitizen": {
