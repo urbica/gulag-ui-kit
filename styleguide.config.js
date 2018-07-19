@@ -1,3 +1,11 @@
 module.exports = {
-  components: 'src/components/Chart/index.js'
+  sections: [
+    {
+      name: 'Components',
+      components: () => [
+        'src/components/Chart/index.js',
+        'src/components/Filter/index.js'
+      ]
+    }
+  ]
 };
