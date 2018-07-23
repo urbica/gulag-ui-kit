@@ -9,21 +9,21 @@ import Container from './styled/Container';
 import Button from './styled/Button';
 import Title from './styled/Title';
 
-const Menu = ({ onClick, title }) => (
+const ButtonWithTitle = ({ onClick, children }) => (
   <Container>
     <Button onClick={onClick}>
       <img src={menu} alt='menu' />
     </Button>
     <Title>
-      {title}
+      {children}
     </Title>
   </Container>
 );
 
-Menu.propTypes = {
+ButtonWithTitle.propTypes = {
   onClick: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 };
 
 /** @component */
-export default Menu;
+export default ButtonWithTitle;
