@@ -5,7 +5,8 @@ module.exports = {
       components: () => [
         'src/components/ButtonWithTitle/index.js',
         'src/components/Chart/index.js',
-        'src/components/Filter/index.js'
+        'src/components/Filter/index.js',
+        'src/components/ChartStat/index.js'
       ]
     }
   ]
