@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](http://gitlab.urbica.co:2222/gulag/ui-kit/compare/v0.2.0...v1.0.0) (2018-08-07)
+
+
+### Bug Fixes
+
+* rename Menu ([2b4ff73](http://gitlab.urbica.co:2222/gulag/ui-kit/commit/2b4ff73))
+
+
+### Features
+
+* ChartStat ([7a89baa](http://gitlab.urbica.co:2222/gulag/ui-kit/commit/7a89baa))
+
+
+### BREAKING CHANGES
+
+* rename Menu to ButtonWithTitle
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](http://gitlab.urbica.co:2222/gulag/ui-kit/compare/v0.1.0...v0.2.0) (2018-07-23)
 
