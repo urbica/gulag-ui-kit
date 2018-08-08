@@ -11,7 +11,7 @@ class Slider extends PureComponent {
     value: PropTypes.number.isRequired,
     xScale: PropTypes.func.isRequired,
     barWidth: PropTypes.number.isRequired,
-    onChange: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
     margin: PropTypes.shape({
       top: PropTypes.number,
       right: PropTypes.number,
@@ -20,6 +20,10 @@ class Slider extends PureComponent {
     }).isRequired,
     height: PropTypes.number.isRequired,
     mobilizeSlider: PropTypes.bool.isRequired
+  };
+
+  static defaultProps = {
+    onChange: null
   };
 
   componentDidMount() {
