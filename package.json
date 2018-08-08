@@ -1,6 +1,6 @@
 {
   "name": "@gulag/ui-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "common components for web and exposure versions",
   "main": "dist/ui-kit.js",
   "scripts": {
