@@ -24,9 +24,9 @@ const ChartStat = ({ stats = [] }) => (
 ChartStat.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number,
-      value: PropTypes.string,
-      description: PropTypes.string,
+      id: PropTypes.string,
+      value: PropTypes.node,
+      description: PropTypes.node,
       lineColor: PropTypes.string
     })
   ).isRequired
